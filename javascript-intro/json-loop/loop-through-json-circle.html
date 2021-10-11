@@ -1,0 +1,37 @@
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+<style>
+    .dot{
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+    }
+</style>
+
+<script>
+
+//define the data
+var json = [
+	{"id":"1","tagName":"apple", "number":"12"},
+	{"id":"2","tagName":"orange", "number":"25"},
+	{"id":"3","tagName":"banana", "number":"5"},
+	{"id":"4","tagName":"watermelon", "number":"18"},
+	{"id":"5","tagName":"pineapple", "number":"32"}
+];
+
+//loop through data to create circles
+$.each(json, function(idx, obj) {
+	document.write(
+        "<span class=\"dot\" style=\"width:" +
+        obj.number +
+        "px;height:" +  
+        obj.number + 
+        "px;\"></span>"
+        );
+});
+
+
+
+
+
+</script>

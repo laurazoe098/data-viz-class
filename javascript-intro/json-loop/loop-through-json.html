@@ -1,0 +1,22 @@
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+
+<script>
+
+//define the data
+var json = [
+	{"id":"1","tagName":"apple"},
+	{"id":"2","tagName":"orange"},
+	{"id":"3","tagName":"banana"},
+	{"id":"4","tagName":"watermelon"},
+	{"id":"5","tagName":"pineapple"}
+];
+
+//loop through the data
+$.each(json, function(idx, obj) {
+	document.write(obj.tagName + "<br>");
+});
+
+
+
+</script>
