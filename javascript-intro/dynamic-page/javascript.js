@@ -19,7 +19,5 @@ function changeHeadline () {
 }
 
 
-//run the function when the page loads
-window.onload = function() {
-  myLoop
-};
+//run the function
+window.onload = changeHeadline(myLoop);
