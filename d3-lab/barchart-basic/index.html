@@ -1,0 +1,36 @@
+<!doctype html>
+
+<html>
+<head>
+    <title>A simple D3 barchart with annotation</title>
+    <style>
+        BODY {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .bar {
+            fill: mediumpurple;
+            opacity: .8;
+        }
+
+    </style>
+
+    <!-- Load d3 -->    
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+    <!-- Load d3-annotation -->
+    <script src="https://rawgit.com/susielu/d3-annotation/master/d3-annotation.min.js"></script>
+
+    <body>
+
+    <div>
+        <!-- This is the element we will target with d3 -->
+        <svg width="800" height="500"></svg>
+    </div>
+
+
+<!-- Load our javascript file -->
+<script src="./chart.js"></script>
+
+</body>
+</html>
